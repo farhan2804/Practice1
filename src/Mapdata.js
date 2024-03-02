@@ -1,27 +1,27 @@
 export const Data = [
     {
-      name: "farhan",
-      title: "Rockstar",
+      name: "Virat",
+      title: "Classy batsman",
       id: "1",
     },
     {
-      name: "haiqua",
-      title: "neet Star",
+      name: "Rohit",
+      title: "Dangerous batsman",
       id: "2",
     },
     {
-        name: "ayaz",
-        title: "office Star",
+        name: "Babar",
+        title: "Classy batsman",
         id: "3",
       },
       {
-        name: "kamil",
-        title: "laachar",
+        name: "afridi",
+        title: "Best Boweler",
         id: "4",
       },
       {
-        name: "rajaMamu",
-        title: "dukaanDaar",
+        name: "Bumrah",
+        title: "Death specialist",
         id: "5",
       }
   ];
