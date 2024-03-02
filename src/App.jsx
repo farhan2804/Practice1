@@ -1,11 +1,14 @@
 import React from "react";
 import "./App.css";
-import Counter from "./useState/Counter";
+import Example from "./useEffect/Example";
+// import Counter from "./useState/Counter";
+
 
 const App = () => {
   return (
     <>
-      <Counter/>
+      {/* <Counter/> */}
+      <Example/>
     </>
   );
 };
