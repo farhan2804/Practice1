@@ -1,29 +1,28 @@
 import React, { useState, useEffect } from "react";
-const FetchApi = () => {
-  const [data, setdata] = useState([]);
+const FetchExample = () => {
+  const [data, putData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   useEffect(() => {
-    const fetchData = async () => {
+    const FetchData = async () => {
       try {
         const response = await fetch(
           "https://jsonplaceholder.typicode.com/posts"
         );
-        console.log('fetched data',response);
+        // console.log('fetched data',response);
         const jsonData = await response.json();
-        console.log('json Converted Data',jsonData)
-        setdata(jsonData);
+        // console.log('json Converted Data',jsonData)
+        putData(jsonData);
       } catch (error) {
         console.log("error  fetching of the data", error);
       } finally {
         setIsLoading(true);
       }
     };
-
-    fetchData();
+    FetchData();
   }, []);
+
   return (
-    //{isLoading ?():()}
-    <div>
+    <>
       {isLoading ? (
         <ul>
           {data.map((post) => (
@@ -31,10 +30,9 @@ const FetchApi = () => {
           ))}
         </ul>
       ) : (
-        <p> Loading....</p>
+        <p>Loading....</p>
       )}
-    </div>
+    </>
   );
 };
-
-export default FetchApi;
+export  default FetchExample;

@@ -3,7 +3,7 @@ import "./App.css";
 // import Example from "./useEffect/Example";
 // import Counter from "./useState/Counter";
 // import MapExample from "./MapFuncExample/MapExample";
-import FetchApi from "./ApiExample/FetchApi";
+import FetchExample from "./ApiExample/FetchApi";
 
 const App = () => {
   return (
@@ -11,7 +11,7 @@ const App = () => {
       {/* <Counter/>
       {/* <Example/> */}
       {/* <MapExample/> */} 
-      <FetchApi/>
+      <FetchExample/>
     </>
   );
 };
